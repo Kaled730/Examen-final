@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final - Kaled Gabriel Coronado Calderon</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="examen-container">
+        <header class="examen-header">
+            <h1>EXAMEN FINAL DE Kaled Gabriel Coronado Calderon</h1>
+        </header>
+
+        <div class="examen-body">
+            <aside class="examen-menu">
+                <h3>MENU</h3>
+                <button id="btn-bienvenida" class="active" onclick="mostrarSeccion('bienvenida')">BIENVENIDA</button>
+                <button id="btn-perfil" onclick="mostrarSeccion('perfil')">PERFIL</button>
+            </aside>
+
+            <main class="examen-content">
+                
+                <div id="seccion-bienvenida" class="seccion-contenido">
+                    <h2>Inauguración del Mundial 2026</h2>
+                    <div class="carrusel">
+                        <button class="btn-carrusel" onclick="cambiarImagen(-1)">◀</button>
+                        <img id="img-carrusel" src="img/M1.jpg" alt="Mundial 2026">
+                        <button class="btn-carrusel" onclick="cambiarImagen(1)">▶</button>
+                    </div>
+                    <p id="texto-carrusel">Imagen 1 de 5</p>
+                </div>
+
+                <div id="seccion-perfil" class="seccion-contenido oculto">
+                    <h2>Perfil del Diseñador</h2>
+                    <div class="grilla-j" id="contenedor-grilla">
+                        </div>
+                </div>
+
+            </main>
+
+            <aside class="examen-publicidad">
+                <h3>PUBLICIDAD</h3>
+                <div class="avatar-placeholder">
+                    <img src="img/ava1.png" alt="Avatar Diseñador" style="width: 100px; height: 100px; margin-bottom: 10px;">
+                    <p><strong>Diseñador Web</strong></p>
+                    <p style="font-size: 0.8rem;">¡Contáctame para proyectos!</p>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="examen-footer">
+            <p>Diseñado por: Kaled Gabriel Coronado Calderon, 2026</p>
+        </footer>
+    </div>
+
+    <script src="js/java.js"></script>
+</body>
+</html>
